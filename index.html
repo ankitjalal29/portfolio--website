@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ankit Jalal — aspiring Java Developer building useful, responsive web experiences.">
+  <title>Ankit Jalal | Java Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Ankit home"><span class="brand-mark">A<span>.</span></span><span>ANKIT JALAL</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact" class="nav-cta">Let's talk <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> OPEN TO LEARNING & OPPORTUNITIES</div>
+        <h1>Building my path<br>to <span class="gradient-text">great software.</span></h1>
+        <p class="hero-intro">Hey, I'm <strong>Ankit Jalal</strong> — an aspiring Java Developer who enjoys turning ideas into clean, useful digital experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↘</span></a>
+          <a class="button button-ghost" href="#contact">Get in touch <span>↗</span></a>
+        </div>
+        <div class="hero-meta"><span><i class="mini-line"></i> Currently learning Java Web Development</span><span class="mono">MEERUT, INDIA</span></div>
+      </div>
+      <div class="hero-art reveal" aria-label="Decorative developer card">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-chip chip-java"><span class="chip-icon">☕</span> Java</div>
+        <div class="floating-chip chip-code"><span class="chip-icon">&lt;/&gt;</span> Build. Learn. Repeat.</div>
+        <div class="profile-card">
+          <div class="card-top"><span class="window-dots"><i></i><i></i><i></i></span><span class="mono">developer.java</span><span class="card-live">● LIVE</span></div>
+          <div class="code-lines">
+            <div><span class="ln">01</span><span class="code-purple">public class</span> <span class="code-green">Ankit</span> <span>{</span></div>
+            <div><span class="ln">02</span>&nbsp;&nbsp;<span class="code-purple">String</span> goal = <span class="code-yellow">"Java Developer"</span>;</div>
+            <div><span class="ln">03</span>&nbsp;&nbsp;<span class="code-purple">boolean</span> learning = <span class="code-blue">true</span>;</div>
+            <div><span class="ln">04</span></div>
+            <div><span class="ln">05</span>&nbsp;&nbsp;<span class="code-purple">void</span> <span class="code-green">build</span>() {</div>
+            <div><span class="ln">06</span>&nbsp;&nbsp;&nbsp;&nbsp;code();</div>
+            <div><span class="ln">07</span>&nbsp;&nbsp;&nbsp;&nbsp;learn();</div>
+            <div><span class="ln">08</span>&nbsp;&nbsp;&nbsp;&nbsp;repeat();<span class="cursor"></span></div>
+            <div><span class="ln">09</span>&nbsp;&nbsp;}</div><div><span class="ln">10</span>}</div>
+          </div>
+          <div class="card-footer"><span><i class="footer-pulse"></i> Always improving</span><span class="mono">v1.0.0</span></div>
+        </div>
+        <div class="floating-star star-one">✳</div><div class="floating-star star-two">✦</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-mouse"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-label reveal"><span>01 / ABOUT ME</span><span class="label-line"></span></div>
+      <div class="about-layout">
+        <h2 class="reveal">Curious mind.<br><span class="muted">Developer in progress.</span></h2>
+        <div class="about-copy reveal">
+          <p class="large-copy">I’m developing my skills one project at a time — with a focus on Java, web technologies, and writing code that solves real problems.</p>
+          <p>I like learning by building. From designing responsive pages to practicing programming fundamentals, every project helps me become a more confident developer.</p>
+          <div class="about-facts"><div><span class="fact-number">01</span><span>Keep learning</span></div><div><span class="fact-number">02</span><span>Build projects</span></div><div><span class="fact-number">03</span><span>Grow together</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-label reveal"><span>02 / TOOLKIT</span><span class="label-line"></span></div>
+      <div class="section-heading reveal"><h2>Tools I work with<span class="accent">.</span></h2><p>A growing toolkit for building ideas into reality.</p></div>
+      <div class="skill-filters reveal" role="group" aria-label="Filter skills">
+        <button class="filter active" data-filter="all">All skills</button><button class="filter" data-filter="code">Programming</button><button class="filter" data-filter="web">Web</button><button class="filter" data-filter="tools">Tools</button>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal" data-category="code"><span class="skill-symbol java-symbol">☕</span><div><h3>Java</h3><p>Learning in progress</p></div><span class="skill-arrow">↗</span></div>
+        <div class="skill-card reveal" data-category="code"><span class="skill-symbol c-symbol">C</span><div><h3>C</h3><p>Programming fundamentals</p></div><span class="skill-arrow">↗</span></div>
+        <div class="skill-card reveal" data-category="code"><span class="skill-symbol py-symbol">Py</span><div><h3>Python</h3><p>Core programming</p></div><span class="skill-arrow">↗</span></div>
+        <div class="skill-card reveal" data-category="web"><span class="skill-symbol html-symbol">5</span><div><h3>HTML & CSS</h3><p>Structure and styling</p></div><span class="skill-arrow">↗</span></div>
+        <div class="skill-card reveal" data-category="web"><span class="skill-symbol js-symbol">JS</span><div><h3>JavaScript</h3><p>Interactive experiences</p></div><span class="skill-arrow">↗</span></div>
+        <div class="skill-card reveal" data-category="web"><span class="skill-symbol react-symbol">✳</span><div><h3>React</h3><p>Component-based UI</p></div><span class="skill-arrow">↗</span></div>
+        <div class="skill-card reveal" data-category="code"><span class="skill-symbol sql-symbol">SQL</span><div><h3>SQL</h3><p>Working with data</p></div><span class="skill-arrow">↗</span></div>
+        <div class="skill-card reveal" data-category="tools"><span class="skill-symbol vscode-symbol">⌘</span><div><h3>VS Code</h3><p>Everyday editor</p></div><span class="skill-arrow">↗</span></div>
+        <div class="skill-card reveal" data-category="tools"><span class="skill-symbol github-symbol">⌁</span><div><h3>GitHub</h3><p>Version control & sharing</p></div><span class="skill-arrow">↗</span></div>
+        <div class="skill-card reveal" data-category="tools"><span class="skill-symbol excel-symbol">▦</span><div><h3>Excel</h3><p>Spreadsheets & data</p></div><span class="skill-arrow">↗</span></div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-label reveal"><span>03 / SELECTED WORK</span><span class="label-line"></span></div>
+      <div class="section-heading reveal"><h2>Projects & practice<span class="accent">.</span></h2><p>Small builds, real lessons. Add your live projects here as you create them.</p></div>
+      <div class="projects-grid">
+        <article class="project-card project-feature reveal">
+          <div class="project-visual visual-qr"><div class="qr-mini"><span>▦</span><span>▥</span><span>▦</span><span>▤</span><span>▦</span><span>▥</span><span>▦</span><span>▦</span><span>▤</span></div><div class="visual-caption mono">SCAN / CONNECT</div><span class="visual-orbit"></span></div>
+          <div class="project-info"><div class="project-type">PYTHON · UTILITY</div><h3>QR Code Generator</h3><p>A Python project idea for creating QR codes for useful links, such as social profiles and websites.</p><div class="tag-row"><span>Python</span><span>Automation</span><span>QR</span></div><a class="project-link" href="https://github.com/ankitjalal29" target="_blank" rel="noreferrer">View on GitHub <span>↗</span></a></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-visual visual-web"><div class="browser-top"><i></i><i></i><i></i></div><div class="browser-content"><span class="browser-pill"></span><span class="browser-line long"></span><span class="browser-line"></span><div class="browser-blocks"><i></i><i></i><i></i></div></div><span class="visual-code">&lt;hello world /&gt;</span></div>
+          <div class="project-info"><div class="project-type">HTML · CSS · JS</div><h3>Interactive Portfolio</h3><p>A responsive portfolio showcasing skills, projects, and contact links with subtle interactive details.</p><div class="tag-row"><span>Responsive</span><span>JavaScript</span></div><a class="project-link" href="#home">Explore this page <span>↗</span></a></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-visual visual-java"><div class="java-cup">☕</div><div class="java-orbit"></div><span class="java-caption mono">LEARN / BUILD / REPEAT</span></div>
+          <div class="project-info"><div class="project-type">JAVA · LEARNING</div><h3>Java Practice Lab</h3><p>A space to collect Java exercises as you practice OOP, logic, and backend development fundamentals.</p><div class="tag-row"><span>Java</span><span>OOP</span><span>Practice</span></div><a class="project-link" href="https://github.com/ankitjalal29" target="_blank" rel="noreferrer">See GitHub profile <span>↗</span></a></div>
+        </article>
+      </div>
+      <p class="project-note"><span>✳</span> Project descriptions are starter examples — update them to match your finished work before sharing professionally.</p>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-glow"></div>
+      <div class="section-label reveal"><span>04 / CONTACT</span><span class="label-line"></span></div>
+      <div class="contact-layout">
+        <div class="reveal"><p class="eyebrow">HAVE A PROJECT OR OPPORTUNITY?</p><h2>Let’s make<br><span class="gradient-text">something useful.</span></h2><p class="contact-desc">I’m always glad to connect with fellow learners, developers, and people who enjoy building things.</p></div>
+        <div class="contact-panel reveal"><div class="contact-row"><span class="contact-icon">↗</span><div><small>GITHUB</small><a href="https://github.com/ankitjalal29" target="_blank" rel="noreferrer">github.com/ankitjalal29</a></div><span class="external">↗</span></div><div class="contact-row"><span class="contact-icon">in</span><div><small>LINKEDIN</small><a href="https://www.linkedin.com/in/ankit-jalal-515700439/" target="_blank" rel="noreferrer">Connect with me</a></div><span class="external">↗</span></div><div class="contact-row"><span class="contact-icon">◎</span><div><small>INSTAGRAM</small><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Add your Instagram link</a></div><span class="external">↗</span></div><button class="copy-button" id="copyProfile">Copy GitHub profile link <span>⧉</span></button><p class="copy-status" id="copyStatus" aria-live="polite"></p></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">A<span>.</span></span><span>ANKIT JALAL</span></a><span>Designed with curiosity <span class="heart">✳</span> and a little code.</span><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
